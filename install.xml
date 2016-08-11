@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template name="phantom">
+	<title>Phantom</title>
+	<summary>Nice template for bloggers</summary>
+	<author>Gleb Surinov</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>1.0.0</version>
+	<date>2016-08-12</date>
+	<compatibility>4.0</compatibility>
+
+	<layout>
+		<position>hidden</position>
+		<position menu="1" movable="0">mainmenu</position>
+
+		<position>top</position>
+		<position>bottom</position>
+		<position>prefooter</position>
+		<position>social</position>
+		<position>copyright</position>
+	</layout>
+
+	<configgroup name="template_phantom">Template</configgroup>
+
+	<config group="template_phantom" 
+		    type="divider"
+		    order="3000">General</config>
+	<config group="template_phantom"
+			name="logo_text"
+		    type="text" 
+		    order="3001" 
+		    description="Logo text">Phantom</config>
+
+	<config group="template_phantom" 
+		    type="divider"
+		    order="4000">Social links</config>
+	<config group="template_phantom"
+			name="website_social_twitter"
+		    type="text"
+		    order="4002"
+		    description="Twitter">https://twitter.com/IntelliantsLLC</config>
+	<config group="template_phantom"
+			name="website_social_facebook"
+		    type="text" 
+		    order="4003" 
+		    description="Facebook">https://www.facebook.com/Intelliants</config>
+	<config group="template_phantom"
+			name="website_social_instagram"
+		    type="text" 
+		    order="4004" 
+		    description="Instagram">#</config>
+	<config group="template_phantom"
+			name="website_social_dribbble"
+		    type="text" 
+		    order="4005" 
+		    description="Dribbble">#</config>
+	<config group="template_phantom"
+			name="website_social_github"
+		    type="text" 
+		    order="4006" 
+		    description="Github">https://github.com/intelliants</config>
+	<config group="template_phantom"
+			name="website_social_500px"
+		    type="text" 
+		    order="4007" 
+		    description="500px">#</config>
+	<config group="template_phantom"
+			name="website_social_email"
+		    type="text" 
+		    order="4008" 
+		    description="Email">info@intelliants.com</config>
+
+	<changeset>
+		<block status="active" classname=" " sticky="0" header="0" pages="index" position="top">blogroll</block>
+	</changeset>
+
+	<blocks>
+		<block name="header" 
+			   title="Header block" 
+			   position="top" 
+			   header="0"
+			   collapsible="0" 
+			   sticky="0" 
+			   pages="index"
+			   status="active"
+			   order="-1"
+			   type="html">
+			<![CDATA[
+<h1>This is Phantom, a free, fully responsive site<br />
+template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+<p><b>This block can be changed in admin panel</b>. Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam.</p>
+			]]>
+		</block>
+		<block name="prefooter" 
+			   title="Prefooter block" 
+			   position="prefooter" 
+			   header="0"
+			   collapsible="0" 
+			   sticky="1" 
+			   status="active"
+			   order="-1"
+			   type="html">
+			<![CDATA[
+<h2>The Phantom theme</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nihil maiores mollitia minima laborum rerum dolorum culpa, maxime inventore ipsam velit reprehenderit libero id ullam omnis eligendi sunt harum dicta.
+</p>
+<p>Excepturi maiores nulla consectetur, molestiae explicabo quasi voluptatibus ipsum perferendis expedita cum, ullam nemo magni officia nesciunt natus voluptates beatae doloribus error unde eum. Quibusdam error earum est, dolor obcaecati.
+</p>
+			]]>
+		</block>
+	</blocks>
+
+	<phrases>
+		<phrase category="frontend" key="nav_header">Menu</phrase>
+		<phrase category="frontend" key="follow">Follow</phrase>
+	</phrases>
+</template>
