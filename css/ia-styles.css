@@ -1,3 +1,7 @@
+#menu > .inner > ul > li.active a {
+	color: #f2849e !important;
+}
+
 
 .blocks-top header + header {
 	margin-top: 80px;
@@ -14,6 +18,13 @@
 
 .tiles article > a .content {
 	margin-top: 1em;
+}
+
+span.button,
+span.button:hover {
+	cursor: default;
+	box-shadow: inset 0 0 0 2px #d8d8d8;
+	color: #bfbfbf !important;
 }
 
 /* Utils */

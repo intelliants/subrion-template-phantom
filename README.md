@@ -1,6 +1,11 @@
 # subrion-template-phantom
 This template is a port of the [Phantom HTML Template](https://html5up.net/phantom), developed by [HTML5up](https://html5up.net/)
 
+#### Plugins compatibility
+This template works great with these plugins:
+* Personal blog
+* Contact us
+
 ### Installation
 1. Download latest release https://github.com/intelliants/subrion-template-phantom/releases
 2. Unpack contents of archive to `[root]/templates` folder
