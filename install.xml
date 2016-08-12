@@ -98,7 +98,7 @@ template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 			   sticky="1" 
 			   status="active"
 			   order="-1"
-			   type="html">
+			   type="smarty">
 			<![CDATA[
 <h2>The Phantom theme</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nihil maiores mollitia minima laborum rerum dolorum culpa, maxime inventore ipsam velit reprehenderit libero id ullam omnis eligendi sunt harum dicta.
