@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<template name="phantom">
+<module type="template" name="phantom">
 	<title>Phantom</title>
 	<summary>Nice template for bloggers</summary>
 	<author>Gleb Surinov</author>
@@ -113,4 +113,4 @@ template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 		<phrase category="frontend" key="nav_header">Menu</phrase>
 		<phrase category="frontend" key="follow">Follow</phrase>
 	</phrases>
-</template>
+</module>

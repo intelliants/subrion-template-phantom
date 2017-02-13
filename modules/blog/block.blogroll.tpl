@@ -1,11 +1,11 @@
-{if isset($block_blog_entries) && $block_blog_entries}
-	{$styles = array(1,2,3,4,5,6)}
+{if !empty($block_blog_entries)}
+	{$styles = [1,2,3,4,5,6]}
 	<section class="tiles">
 		{foreach $block_blog_entries as $one_blog_entry}
 			<article class="style{$styles[array_rand($styles)]}">
 				<span class="image">
 					{if $one_blog_entry.image}
-						{printImage imgfile=$one_blog_entry.image title=$one_blog_entry.title|escape: 'html'}
+						{ia_image file=$one_blog_entry.image type='thumbnail' title=$one_blog_entry.title|escape:'html'}
 					{else}
 						<img src="{$core.page.nonProtocolUrl}templates/phantom/images/placeholder.jpg" alt="" />
 					{/if}

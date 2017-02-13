@@ -1,6 +1,8 @@
 {if isset($blog_entry)}
 	{if $blog_entry.image}
-		<span class="image fit">{printImage imgfile=$blog_entry.image fullimage=true title=$blog_entry.title|escape:'html'}</span>
+		<span class="image fit">
+			{ia_image file=$blog_entry.image type='large' title=$blog_entry.title|escape:'html'}
+		</span>
 	{/if}
 
 	{$blog_entry.body}
@@ -10,7 +12,7 @@
 	<ul class="actions small">
 		<li><span class="fa fa-calendar"></span> {lang key='posted_on'} {$blog_entry.date_added|date_format:$core.config.date_format}</li>
 		<li><span class="fa fa-user"></span> {lang key='by'} {$blog_entry.fullname}</li>
-		{if $tags}
+		{if !empty($tags)}
 			<li>
 				<span class="fa fa-tags"></span> 
 				{foreach $tags as $tag}
@@ -27,7 +29,7 @@
 					<div class="3u">
 						<span class="image fit">
 							{if $blog_entry.image}
-								{printImage imgfile=$blog_entry.image title=$blog_entry.title|escape: 'html'}
+								{ia_image file=$blog_entry.image type='thumbnail' title=$blog_entry.title|escape:'html'}
 							{else}
 								<img src="{$core.page.nonProtocolUrl}templates/phantom/images/placeholder.jpg" alt="" />
 							{/if}
@@ -39,7 +41,7 @@
 						<ul class="actions small">
 							<li><span class="fa fa-calendar"></span> {lang key='posted_on'} {$blog_entry.date_added|date_format:$core.config.date_format}</li>
 							<li><span class="fa fa-user"></span> {lang key='by'} {$blog_entry.fullname}</li>
-							{if $tags}
+							{if !empty($tags)}
 								<li>
 									<span class="fa fa-tags"></span> 
 									{$tagsExist=0}
