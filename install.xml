@@ -70,7 +70,7 @@
 		    description="Email">info@intelliants.com</config>
 
 	<changeset>
-		<block status="active" classname=" " sticky="0" header="0" pages="index" position="top">blogroll</block>
+		<block status="active" classname=" " sticky="0" header="0" pages="index" position="top" order="99">blogroll</block>
 	</changeset>
 
 	<blocks>
@@ -112,5 +112,7 @@ template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 	<phrases>
 		<phrase category="frontend" key="nav_header">Menu</phrase>
 		<phrase category="frontend" key="follow">Follow</phrase>
+		<phrase category="frontend" key="account">Account</phrase>
+		<phrase category="frontend" key="register">Sign up</phrase>
 	</phrases>
 </module>

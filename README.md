@@ -3,7 +3,7 @@ This template is a port of the [Phantom HTML Template](https://html5up.net/phant
 
 #### Plugins compatibility
 This template works great with these plugins:
-* Personal blog
+* Blog
 * Contact us
 
 ### Installation

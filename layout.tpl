@@ -68,32 +68,36 @@
 			<nav id="menu">
 				<h2>{lang key='nav_header'}</h2>
 				{ia_blocks block='mainmenu'}
+				<h2>{lang key='account'}</h2>
+				{ia_blocks block='account'}
 			</nav>
 
 			<div id="main" class="content">
 				<div class="inner">
-					<div class="blocks-top">{ia_blocks block='top'}</div>
+					{if isset($smarty.get.elements)}
+						{include 'page.elements.tpl'}
+					{else}
+						<div class="blocks-top">{ia_blocks block='top'}</div>
+						{if 'index' != $core.page.name}
+							<div class="content__header clearfix">
+								<h1>{$core.page.title}</h1>
+								{ia_hooker name='smartyFrontBeforeBreadcrumb'}
+								{include 'breadcrumb.tpl'}
+							</div>
 
-					{if 'index' != $core.page.name}
-						<div class="content__header clearfix">
-							<h1>{$core.page.title}</h1>
-							{ia_hooker name='smartyFrontBeforeBreadcrumb'}
-							{include 'breadcrumb.tpl'}
-						</div>
+							{ia_hooker name='smartyFrontBeforeNotifications'}
+							{include 'notification.tpl'}
 
-						{ia_hooker name='smartyFrontBeforeNotifications'}
-						{include 'notification.tpl'}
+							{ia_hooker name='smartyFrontBeforeMainContent'}
 
-						{ia_hooker name='smartyFrontBeforeMainContent'}
+							<div class="content__body">
+								{$_content_}
+							</div>
 
-						<div class="content__body">
-							{$_content_}
-						</div>
-
-						{ia_hooker name='smartyFrontAfterMainContent'}
+							{ia_hooker name='smartyFrontAfterMainContent'}
+						{/if}
+						<div class="blocks-bottom">{ia_blocks block='bottom'}</div>
 					{/if}
-
-					<div class="blocks-bottom">{ia_blocks block='bottom'}</div>
 				</div>
 			</div>
 

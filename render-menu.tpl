@@ -4,18 +4,11 @@
 	{ia_menu menus=$menu.contents class="nav-inventory hidden-sm hidden-xs pull-right {$menu.classname}"}
 {elseif 'account' == $position}
 	{if 'account' == $menu.name && $member && $core.config.members_enabled}
-		<ul class="nav navbar-nav navbar-right nav-account">
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					{$member.fullname|default:$member.username}
-					<span class="caret"></span>
-				</a>
-				{ia_hooker name='smartyFrontInsideAccountBox'}
-				{ia_menu menus=$menu.contents class='dropdown-menu' loginout=true}
-			</li>
-		</ul>
+		<p>Hey, {$member.fullname|default:$member.username}!</p>
+		{ia_hooker name='smartyFrontInsideAccountBox'}
+		{ia_menu menus=$menu.contents class='nav-main' loginout=true}
 	{else}
-		<ul class="nav navbar-nav navbar-right">
+		<ul class="nav-main">
 			<li{if 'login' == $core.page.name} class="active"{/if}><a href="{$smarty.const.IA_URL}login/">{lang key='login'}</a></li>
 			<li{if 'registration' == $core.page.name} class="active"{/if}><a href="{$smarty.const.IA_URL}registration/">{lang key='register'}</a></li>
 		</ul>

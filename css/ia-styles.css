@@ -2,7 +2,6 @@
 	color: #f2849e !important;
 }
 
-
 .blocks-top header + header {
 	margin-top: 80px;
 }
@@ -27,6 +26,10 @@ span.button:hover {
 	color: #bfbfbf !important;
 }
 
+ul.actions li a {
+	vertical-align: middle;
+}
+
 /* Utils */
 
 .text-center { text-align: center !important; }
@@ -40,6 +43,9 @@ span.button:hover {
 .m-r-md { margin-right:  5em !important; }
 .m-b-md { margin-bottom: 5em !important; }
 .m-l-md { margin-left:   5em !important; }
+
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
 
 .hidden { display: none !important; }
 
