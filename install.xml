@@ -4,9 +4,9 @@
 	<summary>Nice template for bloggers</summary>
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants LLC</contributor>
-	<version>1.0.1</version>
-	<date>2016-08-12</date>
-	<compatibility>4.0</compatibility>
+	<version>1.1.0</version>
+	<date>2017-02-21</date>
+	<compatibility>4.1.0</compatibility>
 
 	<layout>
 		<position>hidden</position>
