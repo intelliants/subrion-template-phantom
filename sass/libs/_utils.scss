@@ -1,0 +1,22 @@
+.text-center { text-align: center !important; }
+
+.m-t { margin-top:    2.5em !important; }
+.m-r { margin-right:  2.5em !important; }
+.m-b { margin-bottom: 2.5em !important; }
+.m-l { margin-left:   2.5em !important; }
+
+.m-t-md { margin-top:    5em !important; }
+.m-r-md { margin-right:  5em !important; }
+.m-b-md { margin-bottom: 5em !important; }
+.m-l-md { margin-left:   5em !important; }
+
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+
+.hidden { display: none !important; }
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}

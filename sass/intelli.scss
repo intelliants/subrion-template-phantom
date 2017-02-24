@@ -1,0 +1,65 @@
+// Overrides
+
+#menu > .inner p {
+	color: #999;
+}
+
+#menu > .inner > ul > li.active a {
+	color: #f2849e !important;
+}
+
+#menu {
+	.button {
+		margin-bottom: _size(element-margin);
+	}
+}
+
+.blocks-top header + header {
+	margin-top: 80px;
+}
+
+.breadcrumbs {
+	margin: -3em 0 3em 0;
+	opacity: .4;
+}
+
+.breadcrumbs span {
+	margin-left: 0.8em;
+}
+
+.tiles article > a .content {
+	margin-top: 1em;
+}
+
+span.button,
+span.button:hover {
+	cursor: default;
+	box-shadow: inset 0 0 0 2px #d8d8d8;
+	color: #bfbfbf !important;
+}
+
+ul.actions li a {
+	vertical-align: middle;
+}
+
+// Intelli forms layout
+
+.fieldset {
+	margin-bottom: _size(element-margin);
+
+	&__header {
+		font-size: 1.2em;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: _size(element-margin)/2;
+		color: #c9c9c9;
+	}
+
+	&__content {
+		margin-bottom: _size(element-margin);
+	}
+}
+
+.form-group {
+	margin-bottom: _size(element-margin);
+}

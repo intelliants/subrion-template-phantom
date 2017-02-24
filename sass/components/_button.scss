@@ -80,6 +80,25 @@
 			}
 		}
 
+		&.inverse {
+			box-shadow: inset 0 0 0 (_size(border-width) * 2) #fff;
+			background-color: transparent;
+			color: #fff !important;
+
+			&:hover {
+				box-shadow: inset 0 0 0 (_size(border-width) * 2) _palette(accent1);
+				background-color: _palette(accent1);
+				color: #fff !important;
+			}
+
+			&:active {
+				background-color: darken(_palette(accent1), 8);
+				color: #fff !important;
+			}
+		}
+
+
+
 		&.disabled,
 		&:disabled {
 			@include vendor('pointer-events', 'none');

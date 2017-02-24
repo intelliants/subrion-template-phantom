@@ -1,0 +1,40 @@
+.alert {
+	padding: 0.75em 0.75em;
+	border-radius: _size(border-radius);
+	border: 2px solid _palette(border);
+	margin: 0 0 _size(element-margin);
+	background: _palette(bg-alt);
+	font-weight: bold;
+
+	> ul,
+	> ol,
+	> p {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			margin: 0;
+		}
+	}
+
+	&-error,
+	&-danger,
+	&-warning {
+		background: fade-out(_palette(accent4), .75);
+		border-color: _palette(accent4);
+		color: _palette(accent4);
+	}
+
+	&-info {
+		background: fade-out(_palette(accent2), .75);
+		border-color: _palette(accent2);
+		color: _palette(accent2);
+	}
+
+	&-success {
+		background: fade-out(_palette(accent3), .75);
+		border-color: _palette(accent3);
+		color: _palette(accent3);
+	}
+}

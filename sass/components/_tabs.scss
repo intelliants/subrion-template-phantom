@@ -1,0 +1,55 @@
+.nav-tabs {
+	@extend .clearfix;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-bottom: 2px solid _palette(border);
+
+	> li {
+		@extend .clearfix;
+		position: relative;
+		display: block;
+		float: left;
+		padding: 0;
+
+		> a {
+			position: relative;
+			display: block;
+			padding: 1em 2em;
+			border-bottom: 0;
+		}
+
+		&.active > a,
+		&.active > a:hover,
+		&.active > a:focus {
+			color: _palette(accent1);
+
+			&::after {
+				display: block;
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -2px;
+				height: 2px;
+				background: _palette(accent1);
+			}
+		}
+	}
+}
+
+.tab-content {
+	background: _palette(bg-alt);
+
+	> .tab-pane {
+		display: none;
+		padding: _size(element-margin);
+
+		> form {
+			margin-bottom: 0;
+		}
+	}
+	> .active {
+		display: block;
+	}
+}

@@ -12,10 +12,10 @@
 	<ul class="actions small">
 		<li><span class="fa fa-calendar"></span> {lang key='posted_on'} {$blog_entry.date_added|date_format:$core.config.date_format}</li>
 		<li><span class="fa fa-user"></span> {lang key='by'} {$blog_entry.fullname}</li>
-		{if !empty($tags)}
+		{if !empty($blog_tags)}
 			<li>
 				<span class="fa fa-tags"></span> 
-				{foreach $tags as $tag}
+				{foreach $blog_tags as $tag}
 					<a href="{$smarty.const.IA_URL}tag/{$tag.alias}">{$tag.title|escape:'html'}</a>{if !$tag@last}, {/if}
 				{/foreach}
 			</li>
@@ -41,17 +41,17 @@
 						<ul class="actions small">
 							<li><span class="fa fa-calendar"></span> {lang key='posted_on'} {$blog_entry.date_added|date_format:$core.config.date_format}</li>
 							<li><span class="fa fa-user"></span> {lang key='by'} {$blog_entry.fullname}</li>
-							{if !empty($tags)}
+							{if !empty($blog_tags)}
 								<li>
 									<span class="fa fa-tags"></span> 
 									{$tagsExist=0}
-									{foreach $tags as $tag}
+									{foreach $blog_tags as $tag}
 										{if $blog_entry.id == $tag.blog_id}
 											{$tagsExist = $tagsExist + 1}
 										{/if}
 									{/foreach}
 									{if $tagsExist != 0}
-										{foreach $tags as $tag}
+										{foreach $blog_tags as $tag}
 											{if $blog_entry.id == $tag.blog_id}
 												<a href="{$smarty.const.IA_URL}tag/{$tag.alias}">{$tag.title|escape: 'html'}</a>
 											{/if}

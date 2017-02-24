@@ -23,8 +23,8 @@
 
 		<link rel="shortcut icon" href="{if !empty($core.config.site_favicon)}{$core.page.nonProtocolUrl}uploads/{$core.config.site_favicon}{else}{$core.page.nonProtocolUrl}favicon.ico{/if}">
 
-		{ia_add_media files='jquery, subrion, css:main, css:ia-styles' order=0}
-		{ia_print_js files='_IA_TPL_skel.min, _IA_TPL_util, _IA_TPL_main' order=999}
+		{ia_add_media files='jquery, subrion, css:main' order=0}
+		{ia_print_js files='_IA_TPL_bootstrap.min, _IA_TPL_skel.min, _IA_TPL_util, _IA_TPL_main' order=999}
 
 		{ia_hooker name='smartyFrontAfterHeadSection'}
 
@@ -68,6 +68,11 @@
 			<nav id="menu">
 				<h2>{lang key='nav_header'}</h2>
 				{ia_blocks block='mainmenu'}
+
+				{if $member && $core.config.members_enabled}
+					<a href="{$smarty.const.IA_URL}blog/add/" class="button inverse fit icon fa-pencil">{lang key='add_blog_post'}</a>
+				{/if}
+
 				<h2>{lang key='account'}</h2>
 				{ia_blocks block='account'}
 			</nav>

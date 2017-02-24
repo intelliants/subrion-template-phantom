@@ -5,7 +5,7 @@
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants LLC</contributor>
 	<version>1.1.0</version>
-	<date>2017-02-21</date>
+	<date>2017-02-23</date>
 	<compatibility>4.1.0</compatibility>
 
 	<layout>
@@ -114,5 +114,6 @@ template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 		<phrase category="frontend" key="follow">Follow</phrase>
 		<phrase category="frontend" key="account">Account</phrase>
 		<phrase category="frontend" key="register">Sign up</phrase>
+		<phrase category="frontend" key="add_blog_post">Add blog post</phrase>
 	</phrases>
 </module>

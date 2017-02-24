@@ -2,7 +2,8 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-@import 'font-awesome.min.css';
+@import 'libs/font-awesome.min';
+@import 'libs/utils';
 @import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
 
 /*
@@ -56,6 +57,8 @@
 	@import 'components/table';
 	@import 'components/button';
 	@import 'components/tiles';
+	@import 'components/tabs';
+	@import 'components/alerts';
 
 // Layout.
 
@@ -64,3 +67,7 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/wrapper';
+
+// Intelli classes
+
+	@import 'intelli';
