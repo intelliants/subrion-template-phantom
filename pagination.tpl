@@ -1,5 +1,5 @@
-<ul class="actions small m-t-md">
-	<li><span class="button small">{lang key='page'} {$_pagination.current_page} / {$_pagination.pages_count}</span></li>
+<ul class="actions small pagination m-t-md">
+	<li><span class="button special small disabled">{lang key='page'} {$_pagination.current_page} / {$_pagination.pages_count}</span></li>
 	{if $_pagination.current_page > 1}
 		<li><a class="button small" href="{$_pagination.first_page}" title="{lang key='first'}" rel="first" data-page="1"><span class="fa fa-angle-double-left"></span></a></li>
 		<li><a class="button small" href="{$_pagination.pages_range[$_pagination.current_page-1]}" title="{lang key='previous'}" rel="prev" data-page="{$_pagination.current_page-1}"><span class="fa fa-angle-left"></span></a></li>
@@ -8,7 +8,7 @@
 		{if $pageNumber != $_pagination.current_page}
 			<li><a class="button small" href="{$url}" data-page="{$pageNumber}">{$pageNumber}</a></li>
 		{else}
-			<li><span class="button special small">{$pageNumber}</span></li>
+			<li><span class="button special small disabled">{$pageNumber}</span></li>
 		{/if}
 	{/foreach}
 	{if $_pagination.current_page < $_pagination.pages_count}
