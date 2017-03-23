@@ -3,7 +3,7 @@
 	<div class="row uniform">
 		<div class="6u 12u$(xsmall)">
 			<label for="field_login">{lang key='username_or_email'}:</label>
-			<input class="form-control" type="text" tabindex="4" name="username" value="{if isset($smarty.post.username)}{$smarty.post.username|escape:'html'}{/if}">
+			<input class="form-control" type="text" tabindex="4" name="username" value="{if isset($smarty.post.username)}{$smarty.post.username|escape}{/if}">
 		</div>
 		<div class="6u 12u$(xsmall)">
 			<label for="field_password">{lang key='password'}:</label>

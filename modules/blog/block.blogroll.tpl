@@ -5,7 +5,7 @@
 			<article class="style{$styles[array_rand($styles)]}">
 				<span class="image">
 					{if $one_blog_entry.image}
-						{ia_image file=$one_blog_entry.image type='thumbnail' title=$one_blog_entry.title|escape:'html'}
+						{ia_image file=$one_blog_entry.image type='thumbnail' title=$one_blog_entry.title|escape}
 					{else}
 						<img src="{$core.page.nonProtocolUrl}templates/phantom/images/placeholder.jpg" alt="" />
 					{/if}
