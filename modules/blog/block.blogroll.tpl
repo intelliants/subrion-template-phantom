@@ -11,7 +11,7 @@
 					{/if}
 				</span>
 				<a href="{$smarty.const.IA_URL}blog/{$one_blog_entry.id}-{$one_blog_entry.alias}">
-					<h2>{$one_blog_entry.title|escape: html}</h2>
+					<h2>{$one_blog_entry.title|escape}</h2>
 					<div class="content">
 						<p>{$one_blog_entry.body|strip_tags|truncate:80:'...'}</p>
 						<p>{$one_blog_entry.date_added|date_format:$core.config.date_format}</p>
